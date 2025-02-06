@@ -9,3 +9,22 @@
 .navtext {
     color: white;
 }
+
+.career {
+    background-color: rgba(4, 46, 96, 1);
+    color: white;
+    height: 300px;
+    width: 300px;
+}
+
+.career2 {
+    background-color: rgba(4, 46, 96, 1);
+    color: white;
+    height: 350px;
+    width: 300px;
+}
+
+.images {
+    height: 400px;
+    width: 300px;
+}
