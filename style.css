@@ -24,7 +24,26 @@
     width: 300px;
 }
 
+.career3 {
+    background-color: rgba(4, 46, 96, 1);
+    color: white;
+    height: 650px;
+    width: 300px;
+}
+
+.career4 {
+    background-color: rgba(4, 46, 96, 1);
+    color: white;
+    height: 200px;
+    width: 300px;
+}
+
 .images {
     height: 400px;
     width: 300px;
+}
+
+.images2 {
+    height: 400px;
+    width: 500px;
 }
