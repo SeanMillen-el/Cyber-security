@@ -47,3 +47,37 @@
     height: 400px;
     width: 500px;
 }
+
+.video-container {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 2rem;
+}
+.content {
+    flex: 1;
+    min-width: 300px;
+}
+h1 {
+    color: #3498db;
+}
+p {
+    line-height: 1.6;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .video-container {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
