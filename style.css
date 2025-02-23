@@ -1,9 +1,13 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
 .navbar {
     background-color: rgba(4, 46, 96, 1);
 }
 
 .location {
-    color: rgba(50, 217, 255, 1);
+    color: white;
 }
 
 .navtext {
@@ -81,3 +85,106 @@ p {
         margin-bottom: 2rem;
     }
 }
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .content-wrapper {
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  /* Additional styling for inner elements */
+  .home, .about, .services, .contact {
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label, form input, form textarea {
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    align-self: flex-start;
+  }
+
+  .card {
+    height: 100%;
+  }
+  
+  .cardpic {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  @media (min-width: 768px) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .col-lg-4 {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .rounded {
+    border-radius: 0.5rem; /* Consistent rounded corners */
+  }
+  
+  .career {
+    background-color: rgba(4, 46, 96, 1);
+    color: white;
+  }
+  
+  .career3 {
+    background-color: rgba(4, 46, 96, 1);
+    color: white;
+  }
+  
+  .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Distribute space evenly */
+  }
+  
+  .card-body ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+  }
+  
+  .card-body li {
+    margin-bottom: 0.5rem;
+  }
+
+  .card.career .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text */
+    height: 100%; /* Ensure card-body takes up full height of the card */
+    padding: 1rem; /* Add some padding around the text */
+  }
+  
+  .card.career p {
+    margin: 0; /* Remove default paragraph margins */
+  }
