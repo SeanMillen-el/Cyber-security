@@ -1,190 +1,181 @@
-html {
-    scroll-behavior: smooth;
-  }
-  
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-image: url("imgs/cool-back.jpg");
+  color: #333;
+}
+
 .navbar {
-    background-color: rgba(4, 46, 96, 1);
+  background-color: #007bff;
+  /* A professional blue */
+  padding: 15px 0;
 }
 
-.location {
-    color: white;
+.navbar-brand {
+  color: white !important;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.navtext {
-    color: white;
+.nav-link {
+  color: white !important;
+  margin-left: 15px;
 }
 
-.career {
-    background-color: rgba(4, 46, 96, 1);
-    color: white;
-    height: 300px;
-    width: 300px;
-}
-
-.career2 {
-    background-color: rgba(4, 46, 96, 1);
-    color: white;
-    height: 350px;
-    width: 300px;
-}
-
-.career3 {
-    background-color: rgba(4, 46, 96, 1);
-    color: white;
-    height: 650px;
-    width: 300px;
-}
-
-.career4 {
-    background-color: rgba(4, 46, 96, 1);
-    color: white;
-    height: 200px;
-    width: 300px;
-}
-
-.images {
-    height: 400px;
-    width: 300px;
-}
-
-.images2 {
-    height: 400px;
-    width: 500px;
-}
-
-.video-container {
-    flex: 1;
-    min-width: 300px;
-    margin-right: 2rem;
-}
-.content {
-    flex: 1;
-    min-width: 300px;
-}
-h1 {
-    color: #3498db;
-}
-p {
-    line-height: 1.6;
-}
-.cta-button {
-    display: inline-block;
-    background-color: #e74c3c;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-}
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
-    .video-container {
-        margin-right: 0;
-        margin-bottom: 2rem;
-    }
+.nav-link:hover {
+  color: #ddd !important;
 }
 
 .centered-content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-  }
-  
-  .content-wrapper {
-    max-width: 800px;
-    width: 100%;
-  }
-  
-  /* Additional styling for inner elements */
-  .home, .about, .services, .contact {
-    margin-bottom: 30px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form label, form input, form textarea {
-    margin-bottom: 10px;
-  }
-  
-  form button {
-    align-self: flex-start;
-  }
+  padding: 20px;
+}
 
-  .card {
-    height: 100%;
-  }
-  
-  .cardpic {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  @media (min-width: 768px) {
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .col-md-6 {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .col-lg-4 {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
-    }
-  }
+.content-wrapper {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .rounded {
-    border-radius: 0.5rem; /* Consistent rounded corners */
-  }
-  
-  .career {
-    background-color: rgba(4, 46, 96, 1);
-    color: white;
-  }
-  
-  .career3 {
-    background-color: rgba(4, 46, 96, 1);
-    color: white;
-  }
-  
-  .card-body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; /* Distribute space evenly */
-  }
-  
-  .card-body ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-  }
-  
-  .card-body li {
-    margin-bottom: 0.5rem;
-  }
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
+  /* Consistent with navbar */
+}
 
-  .card.career .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically center the text */
-    height: 100%; /* Ensure card-body takes up full height of the card */
-    padding: 1rem; /* Add some padding around the text */
-  }
-  
-  .card.career p {
-    margin: 0; /* Remove default paragraph margins */
-  }
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #212529;
+}
+
+.about,
+.services {
+  margin-bottom: 30px;
+}
+
+.services ul {
+  padding-left: 20px;
+}
+
+.services li {
+  margin-bottom: 8px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+  /* subtle animation */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  /* Slight lift on hover */
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #007bff;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.course-title {
+  color: black;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: whitesmoke;
+  margin-bottom: 15px;
+}
+
+.career h1 {
+  color: #007bff;
+}
+
+.download {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white !important;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.download:hover {
+  background-color: #0056b3;
+}
+
+/* Real World Section */
+#real .card {
+  border-radius: 10px;
+  overflow: hidden;
+  /* Ensure images don't overflow */
+}
+
+#real .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#real .card-body p {
+  font-size: 1rem;
+}
+
+#real .card img {
+  transition: transform 0.3s ease;
+  /* Smooth zoom effect */
+}
+
+#real .card:hover img {
+  transform: scale(1.1);
+  /* Zoom on hover */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
