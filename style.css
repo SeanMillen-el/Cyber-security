@@ -13,13 +13,12 @@ a {
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-image: url("imgs/actbackground.jpg");
+  background-color: #000080;
   color: #333;
 }
 
 .navbar {
   background-color: #007bff;
-  /* A professional blue */
   padding: 15px 0;
 }
 
